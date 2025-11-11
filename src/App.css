@@ -1,0 +1,3 @@
+.app{ min-height:100vh; display:flex; flex-direction:column; background:linear-gradient(180deg,#f8fafc,#e6eef8); }
+.main{ flex:1; padding:1rem; }
+.footer{ text-align:center; padding:1rem; color:#475569; }
