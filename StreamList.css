@@ -1,0 +1,69 @@
+.stream {
+  max-width: 880px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.inputRow {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.inputRow input {
+  flex: 1;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.btn {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f9fafb;
+}
+
+.item.done .text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.iconBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.editInput {
+  flex: 1;
+  padding: 0.4rem;
+}

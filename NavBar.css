@@ -1,0 +1,15 @@
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  padding:1rem 1.5rem;
+  background:linear-gradient(90deg,#111827,#1f2937);
+  color:white;
+}
+.brand{ display:flex; align-items:center; gap:0.6rem; }
+.brand h1{ font-size:1.1rem; margin:0; }
+.menu{ list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
+.menu a{ color:#cbd5e1; text-decoration:none; padding:0.4rem 0.6rem; border-radius:6px; }
+.menu a.active, .menu a:hover{ background:#11182766; color:white; }
+.material-icons{ font-size:28px; }
