@@ -1,8 +1,9 @@
+// src/components/NavBar.jsx
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavBar.css';
 
-export default function NavBar() {
+export default function NavBar({ cartCount }) {
   return (
     <nav className="nav">
       <div className="brand">
@@ -16,7 +17,18 @@ export default function NavBar() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/moviesearch" className={({ isActive }) => (isActive ? 'active' : '')}>
+          <NavLink
+            to="/subscriptions"
+            className={({ isActive }) => (isActive ? 'active' : '')}
+          >
+            Subscriptions
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/moviesearch"
+            className={({ isActive }) => (isActive ? 'active' : '')}
+          >
             Trending
           </NavLink>
         </li>
@@ -28,6 +40,9 @@ export default function NavBar() {
         <li>
           <NavLink to="/cart" className={({ isActive }) => (isActive ? 'active' : '')}>
             Cart
+            {cartCount > 0 && (
+              <span className="cart-badge">{cartCount}</span>
+            )}
           </NavLink>
         </li>
         <li>

@@ -42,3 +42,12 @@
   background: #4f46e5;
   color: white;
 }
+
+.cart-badge {
+  margin-left: 0.4rem;
+  background: #ef4444;
+  color: white;
+  padding: 0 0.45rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
